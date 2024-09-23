@@ -1,0 +1,16 @@
+body{
+    font-family: Volkhov;
+    background-color: rgb(254, 254, 254);
+    background-image: url("images/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+img.logo{
+    width: 170px; 
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
