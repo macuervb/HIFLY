@@ -37,9 +37,10 @@ nav {
   margin: 15px;
   position: absolute;
   top: 50px;
-  right: 200px;
-  background: #fff1da;
+  right: 300px;
+  background: #FFD89A;
   padding: 16px;
+  border-radius: 5px;
 }
 
 nav .menu {
@@ -49,7 +50,7 @@ nav .menu {
 
 nav .menu li {
   margin: 20px;
-  border-radius: 10px;
+  list-style: none;
 }
 
 nav .menu li a {
@@ -102,8 +103,16 @@ nav .menu li a:hover::before {
     color:#181E4B;
   }
 
-  input.enviar{
-    ;
+  input.linkyoutube{
+    position:absolute;
+    top:350px;
+    font-size: medium;
+    background-color: #FFD89A;
+    border:none;
+    color: #8f8f8f;
+    padding: 16px 32px;
+    margin: 4px 4px;
+    border-radius: 5px;
   }
 
   img.modelo{
@@ -113,13 +122,68 @@ nav .menu li a:hover::before {
   aside{
     position: absolute;
     top: 200px;
-    right: 200px;
+    right: 150px;
   }
 
   footer{
+    display: grid;
     position: absolute;
     bottom: 10px;
+    left: 50px;
   }
 
+  .grid-container{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    padding: 10px;
+    position: absolute;
+    top:3px;
+  }
+  .grid-item{
+    background-color: white;
+    padding: 50px;
+    font-size: 30px;
+    text-align: left;
+    grid-template-columns: 90px 90px 90px 90px 90px;
+  }
 
+li{
+  list-style:none;
+  margin: 20px;
+  font-family: Poppins;
+  text-decoration:solid;
+}
+li:hover{
+  text-decoration: underline;
+}
+li.sublist{
+  font-size: medium;
+  font-family: Poppins;
+}
+a.sublist{
+  font-size: medium;
+  color: black;
+  text-decoration: none;
+}
+a.sublist:hover{
+  color: blue;
+text-decoration: underline;
+}
+li.redessociales{
+  float: left;
+  padding: 10px;
+  grid-template-columns: 5px;
+}
+ul.redessociales{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+grid-template-columns: auto auto;
+}
 
+img.redessociales{
+  display: block;
+  padding: 16px;
+
+}
