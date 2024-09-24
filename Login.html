@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hi Fly</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
     <head>
         <meta charset="utf-8"/>
         <title>HIFLY</title>
@@ -13,8 +20,10 @@
     </head>
     <body>
         <header>
-            <!--logo-->
-            <img src="images/logo.png" alt="Logo " title="Logo HTML." class="logo"/>
+            <!--logo con redireccion a home-->
+            <a href="Index.html">
+                <img src="images/logo.png" alt="Logo" title="Logo HTML" class="logo"/>
+            </a>
         </header>
         <nav>
             <!--menu-->
@@ -28,18 +37,21 @@
             </ul>
         </nav>
         <main >
-            <!--informacion principal-->
-            <section>
-            <article><h5 class="suptitulohome">MEJORES DESTINOS</h5>
-                <h1 class="titulohome">Viaja y disfruta </br>
-                     de nuevas </br> experiencias</h1>
-                <h6 class="description">Viaja tranquilo al rededor del mundo nosotros te cubrimos</h6>
-                <input class="linkyoutube" type="button" name="enviar" value="Descubre más" onclick="openyoutubelink('https://youtu.be/0nlr3iLZ0ws')"/>
-            </article> 
-            </section>
-            <aside>
-                <img src="images/modelo.png" alt="principal" title="principal" class="modelo"/>
-            </aside>
+            <!--log in-->
+            <div class="login-container">
+                <form id="loginForm">
+                    <h2>Iniciar sesión</h2>
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+            
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+            
+                    <button type="submit" id="loginBtn">Log in</button>
+            
+                    <p id="error" style="color: red; display: none;">Credenciales incorrectas</p>
+                </form>
+            </div>
         </main>
        <footer>
         <div class="grid-container">
@@ -83,3 +95,8 @@
        </footer>
     </body>
 </html>
+
+
+
+
+
