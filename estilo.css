@@ -1,3 +1,9 @@
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+
 body{
     font-family: Volkhov;
     background-color: rgb(254, 254, 254);
@@ -5,12 +11,111 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+header {
+    padding: 20px;
 
 }
 img.logo{
-    width: 170px; 
-    height: 150px;
+    width: 200px; 
+    height: 102px;
     margin-left: 50px;
     margin-top: 50px;
-    
+    border-radius: 20px;
+    object-fit:fill;
+    display: inline;
 }
+
+nav {
+  margin: 15px;
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  background: #fff1da;
+  padding: 16px;
+}
+
+nav .menu {
+  list-style: none;
+  display: flex;
+}
+
+nav .menu li {
+  margin: 20px;
+  border-radius: 10px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: #8f8f8f;
+  font-size: 24px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  padding-bottom: 5px; /* Agregar espacio para la línea subrayada */
+}
+
+nav .menu li a::before {
+  content: attr(data-item);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Tamaño del "subrayado" */
+  background-color: #1e1a1a; /* Color de la transición */
+  transition: width 0.5s ease-in-out; /* Transición del ancho */
+}
+
+nav .menu li a:hover::before {
+  width: 100%; /* Ancho completo al hacer hover */
+}
+
+  main{
+    font-size: larger; njhjnmn 
+    display: grid;
+  
+  }
+
+  section {
+    display: grid;
+    font-size: 200 px;
+  }
+  article{
+    position: absolute;
+    top: 400px;
+    left:  100px;
+  }
+
+  h5.subtitulohome{
+    font-size: 20px;
+  }
+
+  h1.titulohome{
+    font-size: 30px;
+  }
+
+
+  img.modelo{
+    width: 765px;
+    height: 764px;
+  }
+  aside{
+    position: absolute;
+    top: 200px;
+    right: 250px;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 10px;
+  }
+
+
+
