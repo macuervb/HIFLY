@@ -37,7 +37,7 @@ nav {
   margin: 15px;
   position: absolute;
   top: 50px;
-  right: 300px;
+  right: 200px;
   background: #fff1da;
   padding: 16px;
 }
@@ -98,9 +98,13 @@ nav .menu li a:hover::before {
   }
 
   h1.titulohome{
-    font-size: 30px;
+    font-size: 45px;
+    color:#181E4B;
   }
 
+  input.enviar{
+    ;
+  }
 
   img.modelo{
     width: 765px;
@@ -109,7 +113,7 @@ nav .menu li a:hover::before {
   aside{
     position: absolute;
     top: 200px;
-    right: 250px;
+    right: 200px;
   }
 
   footer{
