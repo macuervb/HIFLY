@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hi Fly</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
     <head>
         <meta charset="utf-8"/>
         <title>HIFLY</title>
@@ -13,8 +20,10 @@
     </head>
     <body>
         <header>
-            <!--logo-->
-            <img src="images/logo.png" alt="Logo " title="Logo HTML." class="logo"/>
+            <!--logo con redireccion a home-->
+            <a href="Index.html">
+                <img src="images/logo.png" alt="Logo" title="Logo HTML" class="logo"/>
+            </a>
         </header>
         <nav>
             <!--menu-->
@@ -25,21 +34,35 @@
                 <li><a href="#">Reservas</a></li>
                 <li><a href="Login.html">Log in</a></li>
                 <li><a href="Sign_up.html">Sign up</a></li>
+                <li><a href="#">ES/EN</a></li>
             </ul>
         </nav>
         <main >
-            <!--informacion principal-->
-            <section>
-            <article><h5 class="suptitulohome">MEJORES DESTINOS</h5>
-                <h1 class="titulohome">Viaja y disfruta </br>
-                     de nuevas </br> experiencias</h1>
-                <h6 class="description">Viaja tranquilo al rededor del mundo nosotros te cubrimos</h6>
-                <input class="linkyoutube" type="button" name="enviar" value="Descubre más" onclick="openyoutubelink('https://youtu.be/0nlr3iLZ0ws')"/>
-            </article> 
-            </section>
-            <aside>
-                <img src="images/modelo.png" alt="principal" title="principal" class="modelo"/>
-            </aside>
+            <!--sign up-->
+            <div class="signup-container">
+                <form id="SignupForm">
+                    <h2>HI FLY</h2>
+                    <br>
+                    <label for="Nosotros">Nosotros somos la agencia de viajes que hace realidad tus sueños de explorar el mundo. Nuestra pasión es ayudarte a 
+                        descubrir los destinos más emocionantes, exóticos y únicos, mientras cuidamos cada detalle para que tu experiencia sea inolvidable.</label>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>MISIÓN</h2>
+                    <br>
+                    <label for="Misión">Nuestra misión es ofrecer experiencias de viaje inolvidables, proporcionando servicios de alta calidad, 
+                        personalizados para cada viajero, y asegurando que cada aventura sea cómoda, segura y accesible.</label>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>VISIÓN</h2>
+                    <br>
+                    <label for="Visión">Queremos convertirnos en la agencia de viajes de referencia a nivel global, reconocida por crear itinerarios únicos, 
+                        sostenibles y personalizados, que conecten a los viajeros con la cultura y el corazón de cada destino.</label>
+                    <br>
+                </form>
+            </div>
+            
         </main>
        <footer>
         <div class="grid-container">

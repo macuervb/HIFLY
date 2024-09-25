@@ -1,5 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hi Fly</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
     <head>
         <meta charset="utf-8"/>
         <title>HIFLY</title>
@@ -13,8 +20,10 @@
     </head>
     <body>
         <header>
-            <!--logo-->
-            <img src="images/logo.png" alt="Logo " title="Logo HTML." class="logo"/>
+            <!--logo con redireccion a home-->
+            <a href="Index.html">
+                <img src="images/logo.png" alt="Logo" title="Logo HTML" class="logo"/>
+            </a>
         </header>
         <nav>
             <!--menu-->
@@ -25,21 +34,34 @@
                 <li><a href="#">Reservas</a></li>
                 <li><a href="Login.html">Log in</a></li>
                 <li><a href="Sign_up.html">Sign up</a></li>
+                <li><a href="#">ES/EN</a></li>
             </ul>
         </nav>
         <main >
-            <!--informacion principal-->
-            <section>
-            <article><h5 class="suptitulohome">MEJORES DESTINOS</h5>
-                <h1 class="titulohome">Viaja y disfruta </br>
-                     de nuevas </br> experiencias</h1>
-                <h6 class="description">Viaja tranquilo al rededor del mundo nosotros te cubrimos</h6>
-                <input class="linkyoutube" type="button" name="enviar" value="Descubre más" onclick="openyoutubelink('https://youtu.be/0nlr3iLZ0ws')"/>
-            </article> 
-            </section>
-            <aside>
-                <img src="images/modelo.png" alt="principal" title="principal" class="modelo"/>
-            </aside>
+            <!--sign up-->
+            <div class="signup-container">
+                <form id="SignupForm">
+                    <h2>Servicios</h2>
+                    <br>
+                    <label for="Uno">-En Hi Fly, ofrecemos una amplia gama de servicios adaptados a tus necesidades de viaje:</label>
+                    <br>
+                    <br>
+                    <label for="Dos">-Viajes personalizados: Diseñamos rutas a medida basadas en tus intereses y presupuesto.</label>
+                    <br>
+                    <br>
+                    <label for="Tres">-Paquetes todo incluido: Vacaciones sin preocupaciones en los mejores destinos del mundo.</label>
+                    <br>
+                    <br>
+                    <label for="cuatro">-Tours y excursiones: Excursiones guiadas por expertos locales.</label>
+                    <br>
+                    <br>
+                    <label for="cinco">-Viajes de negocio y eventos: Organización de congresos, eventos corporativos y viajes de incentivos.</label>
+                    <br>
+                    <br>
+                    <label for="seis">-Asistencia 24/7: Te acompañamos en cada etapa de tu viaje con nuestro soporte en tiempo real.</label>
+                </form>
+            </div>
+            
         </main>
        <footer>
         <div class="grid-container">

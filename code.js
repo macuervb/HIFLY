@@ -19,3 +19,23 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   }
 });
 
+/* Cambio de idioma español a ingles
+const cambiarIdiomaBtn = document.getElementById('cambiar-idioma');
+const titulo = document.getElementById('titulo');
+const descripcion = document.getElementById('descripcion');
+
+let idioma = 'es'; // Idioma inicial
+
+cambiarIdiomaBtn.addEventListener('click', () => {
+    if (idioma === 'es') {
+        titulo.textContent = 'Hello, Welcome to my website';
+        descripcion.textContent = 'This is a text in English.';
+        cambiarIdiomaBtn.textContent = 'Cambiar a Español';
+        idioma = 'en'; // Cambiar a inglés
+    } else {
+        titulo.textContent = 'Hola, Bienvenido a mi sitio web';
+        descripcion.textContent = 'Este es un texto en español.';
+        cambiarIdiomaBtn.textContent = 'Cambiar a Inglés';
+        idioma = 'es'; // Cambiar a español
+    }
+});/*
