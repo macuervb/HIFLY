@@ -38,4 +38,4 @@ cambiarIdiomaBtn.addEventListener('click', () => {
         cambiarIdiomaBtn.textContent = 'Cambiar a Inglés';
         idioma = 'es'; // Cambiar a español
     }
-});/*
+});*/
