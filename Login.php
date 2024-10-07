@@ -3,7 +3,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "Tabla";
+$dbname = "login_system";
 
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 
@@ -20,7 +20,7 @@ $nr = mysqli_num_rows($query);
 
 if($nr == 1)
 {
-    // header ("locatio: index.html")
+    // header ("location: index.html")
     echo "Bienvenido:" .$nombre
 }
     else if ($nr == 0)
