@@ -41,7 +41,7 @@ if ($nr == 1) {
     if ($user['is_admin'] == 1) {
         header("Location: Adminview.html");  // Redirigir a la vista de administrador
     } else {
-        header("Location: Index.html");  // Redirigir a la vista de usuario normal
+        header("Location: Usuarioview.html");  // Redirigir a la vista de usuario normal
     }
     exit();
 } else {
