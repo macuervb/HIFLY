@@ -34,13 +34,21 @@ $nr = $result->num_rows;
 
 // Verificar los resultados
 if ($nr == 1) {
-     header("Location: Adminview.html");
+    // Obtener los datos del usuario
+    $user = $result->fetch_assoc();
+    
+    // Verificar si es administrador (is_admin = 1)
+    if ($user['is_admin'] == 1) {
+        header("Location: Adminview.html");  // Redirigir a la vista de administrador
+    } else {
+        header("Location: Index.html");  // Redirigir a la vista de usuario normal
+    }
     exit();
 } else {
-    echo "No ingreso";
+    echo "No se encontró el usuario o la contraseña es incorrecta.";
 }
 
-// Cerrar la conexión
 $stmt->close();
 $conn->close();
+
 ?>
