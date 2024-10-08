@@ -28,31 +28,70 @@
         <nav>
             <!--menu-->
             <ul class="menu">
-                <li><a href="Destinos.html">Destinos</a></li>
+                <li><a href="#">Agregar Destinos</a></li>
                 <li><a href="#">Hoteles</a></li>
                 <li><a href="#">Vuelos</a></li>
                 <li><a href="#">Reservas</a></li>
-                <li><a href="Login.html">Log in</a></li>
-                <li><a href="Sign_up.html">Sign up</a></li>
+                <li><a href="Index.html">Log out</a></li>
+                <li><a href="#">ES/EN</a></li>
             </ul>
         </nav>
         <main >
-            <!--log in-->
-            <div class="login-container">
-                <form id="loginForm" action="login.php" method="post">
-                    <h2>Iniciar sesión</h2>
+            <!--sign up
+            /*<div class="signup-container">
+                <div class="destination-card">
+                    <img src="images/Roma_italia.png">
+                    <h2>Roma, Italia</h2>
+                    <p>Descubre la historia y la belleza de la Ciudad antigua</p>
                     <br>
-                    <label for="username">Usuario:</label>
-                    <input type="text" id="username" name="txtusuario" placeholder="Ingresa tu usuario" required>
-                    <br><br>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="txtpassword" placeholder="Ingresa tu contraseña" required>
-                    <br><br>
-                    <button type="submit" id="loginBtn" value="ingresar">Iniciar sesión</button>
+                    <h2 id="Precio">$1.800.000</h2>
             
-                    <p id="error" style="color: red; display: none;">Credenciales incorrectas</p>
-                </form>
+                    <button id="destinos-btn">Apartar</button>
+                </div>
+            </div>-->
+            <div class="signup-container">
+                <div class="destination-card">
+                    <img src="images/Roma_italia.png" alt="Roma, Italia" id="roma-img">
+                    <h2>Roma, Italia</h2>
+                    <p>Descubre la historia y la belleza de la Ciudad antigua</p>
+                    <br>
+                    <h2 id="Precio">$1.800.000</h2>
+                    <button id="destinos-btn">QUITAR DESTINO</button>
+                </div>
             </div>
+            
+            <!-- Ventana emergente (Modal) -->
+            <div id="miModal" class="modal">
+                <div class="modal-contenido">
+                    <span class="cerrar">&times;</span>
+                    <h2>Información de Roma, Italia</h2>
+                    <p>Aquí puedes añadir más detalles sobre Roma, Italia, su historia, lugares turísticos, etc.</p>
+                </div>
+            </div>
+
+            <div class="signup-container">
+                <div class="destination-card">
+                    <img src="images/Londres_paris.png">
+                    <h2>Londres, Inglaterra</h2>
+                    <p>Visita la Ciudad donde se realizaron las coronaciones monárquicas británicas.</p>
+                    <br>
+                    <h2 id="Precio">$1.500.000</h2>
+            
+                    <button id="destinos-btn">Apartar</button>
+                </div>
+            </div>
+            
+            <div class="signup-container">
+                <div class="destination-card">
+                    <img src="images/Tokio_japon.png">
+                    <h2>Tokio, Japon</h2>
+                    <p>Descubre la historia y la belleza de la Ciudad Nipona</p>
+                    <br>
+                    <h2 id="Precio">$1.600.000</h2>
+                    <button id="destinos-btn">Apartar</button>
+                </div>
+            </div>
+
         </main>
        <footer>
         <div class="grid-container">
@@ -96,8 +135,3 @@
        </footer>
     </body>
 </html>
-
-
-
-
-
