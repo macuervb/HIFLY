@@ -45,7 +45,7 @@ if ($nr == 1) {
     }
     exit();
 } else {
-    echo "No se encontró el usuario o la contraseña es incorrecta.";
+    echo "<script>alert('Usuario o contraseña incorrectos.'); window.location.href='login.html';</script>";
 }
 
 $stmt->close();
