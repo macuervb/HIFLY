@@ -250,15 +250,29 @@ button:hover {
 }
 
 /* css de sign up */
+.destination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se acomoden en varias filas si es necesario */
+  padding: 20px;
+  margin-top: 100px;  
+}
+
 .signup-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 500px;
-  position: absolute;
-  top: 400px;
+  width: 30%; /* Esto asegura que las tarjetas estén alineadas y no se desborden */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+.destination-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 input {
@@ -269,6 +283,18 @@ input {
   border-radius: 5px;
 }
 
+/* Contenedor de los botones, usa Flexbox */
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px; /* Espacio entre el precio y los botones */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilo para los botones */
 button {
   background-color: #FFD89A;
   color: #050505;
@@ -276,8 +302,11 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  width: 48%; /* Los botones ocuparán el 48% del ancho del contenedor, el 2% restante será el espacio entre ellos */
+  text-align: center;
+  font-size: 16px;
 }
+
 
 button:hover {
   background-color: #e99292;
